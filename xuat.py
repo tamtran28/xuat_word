@@ -8,7 +8,7 @@ import os
 st.set_page_config(page_title="Xuất 4 sheet từ Excel sang Word", page_icon="📄")
 st.title("📄 Xuất dữ liệu từ 4 sheet chỉ định trong Excel sang 1 file Word")
 
-uploaded_file = st.file_uploader("🔽 Tải lên file Excel", type=["xlsx"])
+uploaded_file = st.file_uploader("🔽 Tải lên file Excel", type=["xlsx","xlsm"])
 range_address = st.text_input("📌 Vùng bảng (VD: A1:G20)", value="A1:M103")
 
 # 💡 Chỉ định 4 sheet cần xử lý ở đây
