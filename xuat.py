@@ -30,7 +30,8 @@ if st.button("📤 Xuất 4 sheet sang Word"):
             temp_excel.close()
 
             # Mở Excel bằng openpyxl
-            wb = openpyxl.load_workbook(temp_excel.name, data_only=True)
+            wb = openpyxl.load_workbook(temp_excel.name, data_only=True, keep_vba=True)
+
 
             # Tạo tài liệu Word
             doc = Document()
